@@ -1,0 +1,173 @@
+.sub-tasks {
+  display: none;
+}
+
+.expanded {
+  display: block;
+}
+
+body {
+    background-color: #1C2331;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-section {
+    width: calc(50% - 20px);
+    margin: 20px;
+    background-color: #2C3E50;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.expand-button {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.expand-button:hover {
+    color: #f39c12;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.sub-tasks {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+#day-count {
+    font-weight: bold;
+}
+
+/* For Chrome, Safari, and Opera browsers */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.sub-tasks input[type="checkbox"]:checked ~ label:before {
+  content: "\2714";
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.sub-tasks input[type="checkbox"]:checked ~ label {
+  text-decoration: line-through;
+}
+
+h2.strikethrough {
+  text-decoration: line-through;
+}
+
+.main-section.finished {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.superhero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}       
+   
+@keyframes hero-animation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+  }
+}
+
+.gif-container {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* This line is added to hide the overflow from overlay div */
+}
+
+.gif-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-size: 2em;
+  color: white;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  animation: pulse 1s infinite;
+  color:#4caf50;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
