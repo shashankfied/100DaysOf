@@ -4,8 +4,13 @@ A simple website built using HTML, CSS, and JavaScript inorder to overcome my La
 
 # Screenshot
 
+## When boxes are unchecked.
+
 ![alt text](Website_Screenshot.png "Screenshot Title")
 
+## When all the boxes are checked.
+
+![alt text](Website_Screenshot2.png "Screenshot Title")
 
 # Features
 
