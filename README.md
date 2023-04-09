@@ -44,4 +44,4 @@ Open the To-Do.html file in your web browser.
 Contributions are welcome! please open an issue or submit a pull request if i screwed up somewhere.
 
 # License
-This project is licensed under the GPL License - see the LICENSE file for details.
+This project is licensed under the GPL License (as a free software freak) - see the LICENSE file for details.
