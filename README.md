@@ -4,6 +4,9 @@ A simple website built using HTML, CSS, and JavaScript inorder to overcome my La
 
 # Screenshot
 
+![alt text](Website_Screenshot.png "Screenshot Title")
+
+
 # Features
 
 * Mark tasks as complete.
