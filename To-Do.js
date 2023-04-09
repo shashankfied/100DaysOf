@@ -52,7 +52,7 @@ checkboxes.forEach(checkbox => {
       // Play superhero animation
 const gifContainer = document.createElement('div');
 gifContainer.className = 'gif-container';
-gifContainer.innerHTML = '<div class="overlay">Day Finished!</div><img src="/home/shashank/Downloads/superman-superhero.gif" alt="Example GIF">';
+gifContainer.innerHTML = '<div class="overlay">Day Finished!</div><img src="Superman.gif" alt="Example GIF">';
 
 // Append the container element to the document body
 document.body.appendChild(gifContainer);
